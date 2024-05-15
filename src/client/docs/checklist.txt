@@ -1,0 +1,9 @@
+COMPLETED? (✅❌) | TASK --------------<|LINE LIMIT|>
+
+✅ fix scaling on info pages
+✅ fix some minor menu bugs
+✅ add meta/alt tags to images/web page
+✅ favicon
+✅ grammar check 
+✅ site sources and make powerpoint
+✅ note that all the images are AI 

@@ -1,0 +1,107 @@
+/* includes/menuBar.html */
+#menuBar,
+#menuBarMobile {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: var(--secondaryBackground);
+    color: var(--accent);
+    font-family: var(--header-font);
+}
+
+#menuBar a,
+#menuBarMobile a {
+    font: var(--header-font);
+    display: inline-block;
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+    margin-top: 13px;
+    margin-left: 10px;
+    transition-duration: 0.2s;
+    transition-property: color, border-width;
+}
+
+#menuBar a svg,
+#menuBarMobile a svg {
+    display: inline;
+    height: 29px;
+    width: 29px;
+    transition-duration: 0.2s;
+    transition-property: color;
+}
+
+#menuBar .menuBarNormal:hover,
+#menuBar .menuBarNormalCurrent {
+    color: var(--secondaryAccent);
+    border-bottom-width: 7px;
+    padding-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--secondaryAccent);
+}
+
+#menuBarMobile .menuBarNormal:hover,
+#menuBarMobile .menuBarNormalCurrent {
+    color: var(--secondaryAccent);
+}
+
+#menuBar .menuBarIcon,
+#menuBarMobile .menuBarIcon {
+    float: right;
+    margin-right: 10px;
+}
+
+#menuBar .menuBarIcon:hover,
+#menuBarMobile .menuBarIcon:hover {
+    color: var(--secondaryAccent);
+}
+
+#menuBar .menuBarIconMain img,
+#menuBarMobile .menuBarIconMain img {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin-bottom: -10px;
+    margin-right: 5px;
+    vertical-align: text-top;
+    text-align: left;
+    z-index: 3;
+    position: relative;
+}
+
+#menuBar .menuBarIconMainIcon {
+    margin-top: -8px;
+}
+
+#menuBarMobile .menuBarIconMainIcon {
+    margin-top: -16px;
+}
+
+#menuBarMobile {
+    display: none;
+}
+
+#menuBarMobile #index {
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    #menuBar {
+        display: none;
+    }
+
+    #menuBarMobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #menuBarMobile .menuBarIconMain {
+        display: none;
+    }
+
+    #menuBarMobile #index {
+        display: inline-block;
+    }
+}

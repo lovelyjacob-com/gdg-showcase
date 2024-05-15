@@ -1,0 +1,529 @@
+[
+    // Data Items
+    {
+        "name": "_categoryIcons",
+        "icons": {
+            "Appetizers": "<svg enable-background='new 0 0 24 24' height='24px' viewBox='0 0 24 24' width='24px' fill='currentColor'><g><rect fill='none' height='24' width='24'/></g><g><path d='M2,19h20l-2,2H4L2,19z M5,6h1v1H5V6z M5,4h1v1H5V4z M9,4v1H7V4H9z M9,7H7V6h2V7z M6,15.23c-0.36,0.11-0.69,0.28-1,0.47V8h1 V15.23z M4,16.52C3.62,16.96,3.32,17.45,3.16,18h16.82c0.01-0.16,0.03-0.33,0.03-0.5c0-3.04-2.46-5.5-5.5-5.5 c-2.29,0-4.25,1.4-5.08,3.4C8.84,15.15,8.19,15,7.5,15c-0.17,0-0.33,0.02-0.5,0.04V8h2c1.03,0.06,1.9-0.96,2-2h10V5H11 c-0.1-1.05-0.97-1.97-2-2H3v1h1v1H3v1h1v1H3v1h1V16.52z'/></g></svg>",
+            "Mains": "<svg enable-background='new 0 0 24 24' height='24px' viewBox='0 0 24 24' width='24px' fill='currentColor'><g><rect fill='none' height='24' width='24'/></g><g><g><path d='M22,10c0.32-3.28-4.28-6-9.99-6C6.3,4,1.7,6.72,2.02,10H22z' fill-rule='evenodd'/><path d='M5.35,13.5c0.55,0,0.78,0.14,1.15,0.36c0.45,0.27,1.07,0.64,2.18,0.64 s1.73-0.37,2.18-0.64c0.37-0.23,0.59-0.36,1.15-0.36c0.55,0,0.78,0.14,1.15,0.36c0.45,0.27,1.07,0.64,2.18,0.64 c1.11,0,1.73-0.37,2.18-0.64c0.37-0.23,0.59-0.36,1.15-0.36c0.55,0,0.78,0.14,1.15,0.36c0.45,0.27,1.07,0.63,2.17,0.64v-1.98 c0,0-0.79-0.16-1.16-0.38c-0.45-0.27-1.07-0.64-2.18-0.64c-1.11,0-1.73,0.37-2.18,0.64c-0.37,0.23-0.6,0.36-1.15,0.36 s-0.78-0.14-1.15-0.36c-0.45-0.27-1.07-0.64-2.18-0.64s-1.73,0.37-2.18,0.64c-0.37,0.23-0.59,0.36-1.15,0.36 c-0.55,0-0.78-0.14-1.15-0.36c-0.45-0.27-1.07-0.64-2.18-0.64c-1.11,0-1.73,0.37-2.18,0.64C2.78,12.37,2.56,12.5,2,12.5v2 c1.11,0,1.73-0.37,2.21-0.64C4.58,13.63,4.8,13.5,5.35,13.5z' fill-rule='evenodd'/><path d='M2,16v2c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2v-2H2z' fill-rule='evenodd'/></g></g></svg>",
+            "Sides": "<svg height='24px' viewBox='0 0 24 24' width='24px' fill='currentColor'><path d='M0 0h24v24H0z' fill='none'/><path d='M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z'/></svg>",
+            "Desserts": "<svg height='24px' viewBox='0 0 24 24' width='24px' fill='currentColor'><path d='M0 0h24v24H0z' fill='none'/><path d='M12 6c1.11 0 2-.9 2-2 0-.38-.1-.73-.29-1.03L12 0l-1.71 2.97c-.19.3-.29.65-.29 1.03 0 1.1.9 2 2 2zm4.6 9.99l-1.07-1.07-1.08 1.07c-1.3 1.3-3.58 1.31-4.89 0l-1.07-1.07-1.09 1.07C6.75 16.64 5.88 17 4.96 17c-.73 0-1.4-.23-1.96-.61V21c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-4.61c-.56.38-1.23.61-1.96.61-.92 0-1.79-.36-2.44-1.01zM18 9h-5V7h-2v2H6c-1.66 0-3 1.34-3 3v1.54c0 1.08.88 1.96 1.96 1.96.52 0 1.02-.2 1.38-.57l2.14-2.13 2.13 2.13c.74.74 2.03.74 2.77 0l2.14-2.13 2.13 2.13c.37.37.86.57 1.38.57 1.08 0 1.96-.88 1.96-1.96V12C21 10.34 19.66 9 18 9z'/></svg>",
+            "Drinks": "<svg height='24px' viewBox='0 0 24 24' width='24px' fill='currentColor'><path d='M0 0h24v24H0V0z' fill='none'/><path d='M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.9 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z'/></svg>",
+            "All": "<svg enable-background='new 0 0 24 24' height='24px' viewBox='0 0 24 24' width='24px' fill='currentColor'><g><rect fill='none' height='24' width='24'/></g><g><g/><g><path d='M21,5c-1.11-0.35-2.33-0.5-3.5-0.5c-1.95,0-4.05,0.4-5.5,1.5c-1.45-1.1-3.55-1.5-5.5-1.5S2.45,4.9,1,6v14.65 c0,0.25,0.25,0.5,0.5,0.5c0.1,0,0.15-0.05,0.25-0.05C3.1,20.45,5.05,20,6.5,20c1.95,0,4.05,0.4,5.5,1.5c1.35-0.85,3.8-1.5,5.5-1.5 c1.65,0,3.35,0.3,4.75,1.05c0.1,0.05,0.15,0.05,0.25,0.05c0.25,0,0.5-0.25,0.5-0.5V6C22.4,5.55,21.75,5.25,21,5z M21,18.5 c-1.1-0.35-2.3-0.5-3.5-0.5c-1.7,0-4.15,0.65-5.5,1.5V8c1.35-0.85,3.8-1.5,5.5-1.5c1.2,0,2.4,0.15,3.5,0.5V18.5z'/><g><path d='M17.5,10.5c0.88,0,1.73,0.09,2.5,0.26V9.24C19.21,9.09,18.36,9,17.5,9c-1.7,0-3.24,0.29-4.5,0.83v1.66 C14.13,10.85,15.7,10.5,17.5,10.5z'/><path d='M13,12.49v1.66c1.13-0.64,2.7-0.99,4.5-0.99c0.88,0,1.73,0.09,2.5,0.26V11.9c-0.79-0.15-1.64-0.24-2.5-0.24 C15.8,11.66,14.26,11.96,13,12.49z'/><path d='M17.5,14.33c-1.7,0-3.24,0.29-4.5,0.83v1.66c1.13-0.64,2.7-0.99,4.5-0.99c0.88,0,1.73,0.09,2.5,0.26v-1.52 C19.21,14.41,18.36,14.33,17.5,14.33z'/></g></g></g></svg>"
+        }
+    },
+
+    // MEALS
+    {
+        "name": "Game Day Burger",
+        "id": "f883227e-c2eb-4530-9f9f-43183afcf66b",
+        "image": "./assets/images/food/mains/gdgBurger.png",
+        "price": 8.35,
+        "category": "Mains",
+        "description": "Our Game Day Burger is our unique take on a classic burger. Doused with our specialty sauce, it's sure to leave you feeling like a winner. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Cheeseburger",
+        "id": "9e6380e1-8cd6-4125-a4d6-1376bf0de4ec",
+        "image": "./assets/images/food/mains/cheeseburger.png",
+        "price": 3.99,
+        "category": "Mains",
+        "description": "A good old-fashioned cheeseburger. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Bacon Burger",
+        "id": "0d086e3f-8383-4419-bbb0-3415f3b5de34",
+        "image": "./assets/images/food/mains/baconBurger.png",
+        "price": 4.1,
+        "category": "Mains",
+        "description": "Game Day Grill's fan favorite BLT style burger. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Sloppy Joe",
+        "id": "ed85e554-10eb-4bf9-9a06-58db0ff37744",
+        "image": "./assets/images/food/mains/sloppyJoe.png",
+        "price": 3.99,
+        "category": "Mains",
+        "description": "Our sloppy joe's are derived from late Richard Harley's very own recipe. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Double Trouble Burger",
+        "id": "fd6db732-c80c-4a4b-8ab8-4979fd42cc58",
+        "image": "./assets/images/food/mains/doubleTrouble.png",
+        "price": 4.5,
+        "category": "Mains",
+        "description": "Our Double Trouble Burger is exactly what the name implies. A classic cheeseburger with an additional bun and patty is the perfect way to celebrate that team victory. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Hotdog",
+        "id": "0383645a-93a5-40c0-a86b-e1c6691b73c2",
+        "image": "./assets/images/food/mains/hotdog.png",
+        "price": 1.5,
+        "category": "Mains",
+        "description": "Our grilled Hotdogs will make you feel like you are there in the stadium with your favorite teams. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Chili Hotdog",
+        "id": "607b8bab-e3bd-490a-a910-296f9907eab1",
+        "image": "./assets/images/food/mains/chiliDog.png",
+        "price": 1.75,
+        "category": "Mains",
+        "description": "Our Chili Hotdogs will give you that boost of flavor that will help you cheer on your favorite teams. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Loaded Hotdog",
+        "id": "8cb3a2bf-23d7-47ed-bdc2-23957c3f9c2f",
+        "image": "./assets/images/food/mains/loadedHotdog.png",
+        "price": 1.75,
+        "category": "Mains",
+        "description": "Our Loaded Hotdogs are blessed by an assortment of toppings that make you feel like you're hitting that winning ball. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Steak",
+        "id": "5c59fd9e-574d-4aca-92ee-e9f23693f39d",
+        "image": "./assets/images/food/mains/steak.png",
+        "price": 12.99,
+        "category": "Mains",
+        "description": "Try our mouth-watering take on your favorite cut of steak. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "1/2 Rack Ribs",
+        "id": "4ed0fc79-a679-4cbe-b9b3-5de7872933c3",
+        "image": "./assets/images/food/mains/halfRibs.png",
+        "price": 9.99,
+        "category": "Mains",
+        "description": "Half the ribs, all the yum! Our ribs are coated with out signature dry rub, so you aren't gonna find flavor like this anywhere else. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Full Rack Ribs",
+        "id": "5ebf0bb4-8e5e-4689-ae50-0d9de983117c",
+        "image": "./assets/images/food/mains/fullRibs.png",
+        "price": 17.99,
+        "category": "Mains",
+        "description": "Try our Full Back Ribs. Our ribs are coated with our signature dry rub, so you aren't gonna find flavor like this anywhere else. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Grilled Chicken",
+        "id": "cbc7e2a3-eeb9-47e1-a4d4-e54c796f789c",
+        "image": "./assets/images/food/mains/grilledChicken.png",
+        "price": 5.99,
+        "category": "Mains",
+        "description": "Try our Grilled Chicken, where expertly seasoned chicken meets the grill for a mouthwatering experience. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Grilled Chicken Salad",
+        "id": "ffdd0e18-fd7b-46fe-bc34-217c30010e33",
+        "image": "./assets/images/food/mains/gcSalad.png",
+        "price": 7.2,
+        "category": "Mains",
+        "description": "Experience the freshness of our Grilled Chicken Salad, where tender grilled chicken meets crisp greens for a delightful dining experience. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Chicken Tenders",
+        "id": "b0578c7c-5afc-4455-9004-9922f3ea9688",
+        "image": "./assets/images/food/mains/cTenders.png",
+        "price": 5.99,
+        "category": "Mains",
+        "description": "Try our Chicken Tenders - golden, crispy perfection paired with your favorite dipping sauces for a satisfying and flavorful meal. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Chicken Wings",
+        "id": "f0bdb43f-4975-488e-ab46-82e7188856ed",
+        "image": "./assets/images/food/mains/cWings.png",
+        "price": 7.99,
+        "category": "Mains",
+        "description": "Crispy, succulent wings tossed in an array of irresistible sauces designed to make you feel like a winner. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Chicken Breast",
+        "id": "1f126af7-d570-42bc-9366-7ce49606e3bd",
+        "image": "./assets/images/food/mains/cBreast.png",
+        "price": 5.99,
+        "category": "Mains",
+        "description": "Savor the experience of eating our famous Chicken Breasts. Made of premium, perfectly seasoned chicken they are sure to leave you craving more. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Chicken Sandwich",
+        "id": "3628af30-debd-45ea-a91b-2d84c18d64c8",
+        "image": "./assets/images/food/mains/cSandwich.png",
+        "price": 3.99,
+        "category": "Mains",
+        "description": "Try our Chicken Sandwich, which features tender, perfectly grilled chicken nestled in a soft bun, accompanied by a medley of fresh, mouthwatering toppings. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "BBQ Chicken",
+        "id": "ac340ab2-307d-4c0c-b540-660cb783aa5a",
+        "image": "./assets/images/food/mains/BBQchicken.png",
+        "price": 5.99,
+        "category": "Mains",
+        "description": "Indulge in the smoky allure of our BBQ Chicken, where succulent grilled chicken doused in rich, flavorful barbecue sauce promises a taste journey beyond compare. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Pork Tenderloin",
+        "id": "6d7a2fa2-4ca0-4e32-9117-df82c471f27d",
+        "image": "./assets/images/food/mains/pTenderloins.png",
+        "price": 7.99,
+        "category": "Mains",
+        "description": "Indulge in culinary perfection with our Pork Tenderloins, featuring succulent, expertly seasoned pork tenderloin cooked to perfection. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    {
+        "name": "Pork Chop",
+        "id": "d5c3d1c3-63e7-4a6b-88c0-98f1a00462ff",
+        "image": "./assets/images/food/mains/pChops.png",
+        "price": 8.99,
+        "category": "Mains",
+        "description": "Juicy Pork Chops grilled to perfection and infused with delectable flavors. \n Make it a meal and get two sides of your choosing.",
+        "canBeMeal": true
+    },
+    // SIDES
+    {
+        "name": "Fries",
+        "id": "fc0a8812-6428-42de-98cc-71689b48577e",
+        "image": "./assets/images/food/sides/fries.png",
+        "price": 2.4,
+        "category": "Sides",
+        "description": "A basket of fries seasoned with salt. \n Suitable for four people."
+    },
+    {
+        "name": "Home-Style Fries",
+        "id": "f0990982-d4b8-4e1a-a60d-93047c44eab6",
+        "image": "./assets/images/food/sides/homeFries.png",
+        "price": 2.4,
+        "category": "Sides",
+        "description": "A savory side dish of home-style fries. Baked with fresh potatoes. "
+    },
+    {
+        "name": "Hash Browns",
+        "id": "75bfeaea-7c8f-4797-baf9-fab80959a120",
+        "image": "./assets/images/food/sides/hashbrowns.png",
+        "price": 2.8,
+        "category": "Sides",
+        "description": "A crispy side dish containing two salted hash browns."
+    },
+    {
+        "name": "Baked Potato",
+        "id": "4a193231-b46a-47a0-b97e-aba60beec485",
+        "image": "./assets/images/food/sides/bakedPotato.png",
+        "price": 2.4,
+        "category": "Sides",
+        "description": "A large baked potato topped with butter and salt."
+    },
+    {
+        "name": "Mashed Potatoes",
+        "id": "c0403cca-c4fb-4093-967e-e62b92042bcf",
+        "image": "./assets/images/food/sides/mashedPotatoes.png",
+        "price": 2.4,
+        "category": "Sides",
+        "description": "A savory side dish of mashed potatoes featuring real and fresh potatoes. "
+    },
+    {
+        "name": "Mac and Cheese",
+        "id": "c32d0d30-a603-46ff-af61-3690b3f98183",
+        "image": "./assets/images/food/sides/macAndCheese.png",
+        "price": 2.4,
+        "category": "Sides",
+        "description": "A fun and cheesy side of macaroni and cheese."
+    },
+    {
+        "name": "Coleslaw",
+        "id": "c23219a0-40ae-4551-bc7b-3b0667feee19",
+        "image": "./assets/images/food/sides/coleslaw.png",
+        "price": 2.4,
+        "category": "Sides",
+        "description": "A familiar side dish of coleslaw."
+    },
+    {
+        "name": "Baked Beans",
+        "id": "454db3ca-3f34-4bf3-a8f4-98929b04bbe9",
+        "image": "./assets/images/food/sides/bakedBeans.png",
+        "price": 2.4,
+        "category": "Sides",
+        "description": "A homely side dish of fresh baked beans."
+    },
+    {
+        "name": "Corn on the Cob",
+        "id": "1c42ca91-ed97-4dbc-9f6b-7602a46ff947",
+        "image": "./assets/images/food/sides/cornOnCob.png",
+        "price": 3.1,
+        "category": "Sides",
+        "description": "A buttery side dish consisting of two mid-sized cobs of cooked and salted corn."
+    },
+    {
+        "name": "Asparagus",
+        "id": "4f32e2f6-5c42-44af-9a8d-f2aceecea55a",
+        "image": "./assets/images/food/sides/asparagus.png",
+        "price": 2.4,
+        "category": "Sides",
+        "description": "A delicious side dish of Oven-Roasted Asparagus."
+    },
+    {
+        "name": "Broccoli and Cheese",
+        "id": "bda44057-6804-411b-9492-f9f4e2932211",
+        "image": "./assets/images/food/sides/brocAndCheese.png",
+        "price": 2.4,
+        "category": "Sides",
+        "description": "A delicious side dish of cooked brocoli drizzled in a beautiful nacho cheese."
+    },
+
+    // APPETIZERS
+    {
+        "name": "Loaded Fry Basket",
+        "id": "a7cdbfdf-c8db-4579-ac71-c3cfc58c8863",
+        "image": "./assets/images/food/appetizers/loadedFries.png",
+        "price": 4.99,
+        "category": "Appetizers",
+        "description": "Get a huge bowl of french fries covered in beef, cheese, peppers, and/or peppers.  \n Suitable for four people.  "
+    },
+    {
+        "name": "Fried Pickles with Ranch",
+        "id": "1af57cee-8a73-4e2b-80d9-e73cdaec4ba0",
+        "image": "./assets/images/food/appetizers/friedPickles.png",
+        "price": 5.15,
+        "category": "Appetizers",
+        "description": "Experience pickles like you never had before by getting 12 fried up by our masterful chefs here at Game Day Grill. A side of ranch is included.  \n Suitable for four people. "
+    },
+    {
+        "name": "Salad",
+        "id": "860a7062-e07b-4984-8c41-b88083b9e491",
+        "image": "./assets/images/food/appetizers/salad.png",
+        "price": 3.99,
+        "category": "Appetizers",
+        "description": "A refreshing bowl of romaine lettuce topped with an assortment of carrots, cucumbers, tomatoes, onions, croutons, and ranch. \n Suitable for four people."
+    },
+    {
+        "name": "Cheese Curds",
+        "id": "9b2cfa17-6adf-4684-84a6-3afd7c75a6af",
+        "image": "./assets/images/food/appetizers/cheeseCurds.jpg",
+        "price": 4.99,
+        "category": "Appetizers",
+        "description": "Get all the cheesy goodness with none of the mess! Get a bowl of 12 delicious cheese curds. \n Suitable for four people. "
+    },
+    {
+        "name": "Mozzarella Sticks",
+        "id": "c0f1f92a-984c-46cd-8d3e-4cc652d1ea2c",
+        "image": "./assets/images/food/appetizers/mozzSticks.png",
+        "price": 5.15,
+        "category": "Appetizers",
+        "description": "Get a bowl of 12 supremely cheesy mozzarella sticks."
+    },
+    {
+        "name": "Nachos",
+        "id": "38e93359-4cb6-45a5-8ee2-e1c25b771055",
+        "image": "./assets/images/food/appetizers/nachos.png",
+        "price": 3.99,
+        "category": "Appetizers",
+        "description": "Get a huge bowl of chips topped with nacho cheese. They can also be customized to your liking with the addition of meat, peppers, etc.  \n Perfect for up to four people."
+    },
+    {
+        "name": "Chips and Salsa/+ Guac",
+        "id": "7cb7f2cb-776f-4b46-80f7-308b8dff9ff1",
+        "image": "./assets/images/food/appetizers/chipSalsa.png",
+        "price": 3.99,
+        "category": "Appetizers",
+        "description": "Get a huge bowl of chips with a side of salsa and/or guacamole.  \n Perfect for up to four people."
+    },
+
+    // DESSERTS
+
+    {
+        "name": "Chocolate Cake Slice",
+        "id": "94907611-b3e2-48d9-8f37-33049a8e33c4",
+        "image": "./assets/images/food/desserts/chocCake.png",
+        "price": 3.15,
+        "category": "Desserts",
+        "description": "Get a deluxe slice of a chocolate cake topped with chocolate buttercream icing."
+    },
+    {
+        "name": "Vanilla Cake Slice",
+        "id": "259b0b6d-2652-460a-8466-31b908db76b5",
+        "image": "./assets/images/food/desserts/vanCake.png",
+        "price": 2.99,
+        "category": "Desserts",
+        "description": "Get a deluxe slice of a vanilla cake topped with vanilla buttercream icing."
+    },
+    {
+        "name": "Marble Cake Slice",
+        "id": "09973078-551b-40ab-a44e-1ec6df73abf5",
+        "image": "./assets/images/food/desserts/marbleCake.png",
+        "price": 2.99,
+        "category": "Desserts",
+        "description": "Get a deluxe slice of a marbled cake topped with half vanilla and half chocolate buttercream icing. "
+    },
+    {
+        "name": "Cheesecake Slice",
+        "id": "0a31dd1f-f7f7-480a-908a-dbf8c45edb79",
+        "image": "./assets/images/food/desserts/cheeseCake.png",
+        "price": 3.15,
+        "category": "Desserts",
+        "description": "Made with the finest cream cheese fresh in our restaurant. A sweet treat you will remember. "
+    },
+    {
+        "name": "Vanilla Soft Serve",
+        "id": "74207fde-9395-46b2-b7e0-4862433d8de9",
+        "image": "./assets/images/food/desserts/vanIcecream.png",
+        "price": 2.5,
+        "category": "Desserts",
+        "description": "Get that nice vanilla ice cream flavor partnered with a deluxe texture. All on top of a sweet sugar cone or in a bowl."
+    },
+    {
+        "name": "Chocolate Soft Serve",
+        "id": "711302cf-eae6-473f-9320-f86785fe9183",
+        "image": "./assets/images/food/desserts/chocIcecream.png",
+        "price": 2.5,
+        "category": "Desserts",
+        "description": "Get that nice chocolate ice cream flavor partnered with a deluxe texture. All on top of a sweet sugar cone or in a bowl."
+    },
+    {
+        "name": "Chocolate and Vanilla Sundae",
+        "id": "ebbd623d-88cb-4c45-848b-23f676d4b4ba",
+        "image": "./assets/images/food/desserts/sundae.png",
+        "price": 6.78,
+        "category": "Desserts",
+        "description": "Get two huge scoops of chocolate and vanilla ice cream topped off by a delicious chocolate syrup and even a cherry on top."
+    },
+    {
+        "name": "Fried Ice Cream",
+        "id": "e9c26de7-ab8f-4598-85d5-1299012f9c39",
+        "image": "./assets/images/food/desserts/friedIcecream.png",
+        "price": 3.15,
+        "category": "Desserts",
+        "description": "Experience ice cream like you never had before by getting a few scoops fried up by our masterful chefs here at Game Day Grill."
+    },
+    {
+        "name": "Fried Cookies and Cream Cookie",
+        "id": "6f2e3881-a502-4fe8-a8c2-e67ca01a023e",
+        "image": "./assets/images/food/desserts/friedCookie.png",
+        "price": 3.15,
+        "category": "Desserts",
+        "description": "Experience cookies like you never had before by getting one fried up by our masterful chefs here at Game Day Grill."
+    },
+    {
+        "name": "Cinnamon Rolls",
+        "id": "b400ae30-79c4-4d06-9237-dd3efd01bb92",
+        "image": "./assets/images/food/desserts/cinRolls.png",
+        "price": 4.69,
+        "category": "Desserts",
+        "description": "Our mouthwatering cinnamon rolls are a delicious blend between cinnamon, sugar, and yeast-leavened dough. An order of cinnamon rolls comes with four 1 1/2'' cinnamon rolls. "
+    },
+    {
+        "name": "Chocolate Milkshake",
+        "id": "61294bf9-fa90-4d0b-96a0-01d9deca42c5",
+        "image": "./assets/images/food/desserts/chocShake.png",
+        "price": 2.5,
+        "category": "Desserts",
+        "description": "Our magnificent chocolate milkshake is blasted with flavor and complimented with a delightful consistency.",
+        "isDrink": true
+    },
+
+    {
+        "name": "Strawberry Milkshake",
+        "id": "aa23843e-e1d5-4ca1-a231-9ead371e29be",
+        "image": "./assets/images/food/desserts/strawShake.png",
+        "price": 2.5,
+        "category": "Desserts",
+        "description": "Our magnificent strawberry milkshake is blasted with flavor and complimented with a delightful consistency.",
+        "isDrink": true
+    },
+
+    // DRINKS
+
+    {
+        "name": "Water",
+        "id": "84b3cafb-b65f-48c1-83ca-161dddfa0b4d",
+        "image": "./assets/images/food/drinks/water.png",
+        "price": 0.5,
+        "category": "Drinks",
+        "description": "Indulge in a refreshing wave of ice-cold water.",
+        "isDrink": true
+    },
+    {
+        "name": "Sweet Tea",
+        "id": "546f06be-b0e6-4226-a4fb-060fe7ac7046",
+        "image": "./assets/images/food/drinks/swTea.png",
+        "price": 1.25,
+        "category": "Drinks",
+        "description": "Your taste buds will be delighted by the sensation of this oh-so-sweet tea!",
+        "isDrink": true
+    },
+    {
+        "name": "Unsweetened Tea",
+        "id": "9a8a5493-4d9f-4ffa-afe7-7affd2efebf0",
+        "image": "./assets/images/food/drinks/tea.png",
+        "price": 1.25,
+        "category": "Drinks",
+        "description": "Get soothed by the calming, yet tasty nature of our unsweetened tea.",
+        "isDrink": true
+    },
+    {
+        "name": "Lemonade",
+        "id": "9507efae-9d03-494e-8cee-8e8074a02eb5",
+        "image": "./assets/images/food/drinks/lemonade.png",
+        "price": 1.25,
+        "category": "Drinks",
+        "description": "An oasis of sweetness on any hot day that is sure to reinvigorate your body. Tastes nice on cold days as well. ",
+        "isDrink": true
+    },
+    {
+        "name": "Strawberry Lemonade",
+        "id": "cc51a2a4-bc3d-4563-837e-aa5bbcac8b6d",
+        "image": "./assets/images/food/drinks/strawLemonade.png",
+        "price": 1.25,
+        "category": "Drinks",
+        "description": "A familiar drink with a new pink twist! Rule the seasons with style.",
+        "isDrink": true
+    },
+    {
+        "name": "Nurse Reaper",
+        "id": "7a5eeec8-cf88-4ba8-90e5-3decc4503eff",
+        "image": "./assets/images/food/drinks/nurseReaper.png",
+        "price": 1.25,
+        "category": "Drinks",
+        "description": "A caffeinated soda with a nice taste that will push you to win the game. ",
+        "isDrink": true
+    },
+    {
+        "name": "Pop-Off",
+        "id": "4e7427d9-31ce-4e2b-9b17-07c789dc71b7",
+        "image": "./assets/images/food/drinks/popOff.png",
+        "price": 1.25,
+        "category": "Drinks",
+        "description": "A delicious caffeinated soda with a stunning color that matches the elegant taste.",
+        "isDrink": true
+    },
+    {
+        "name": "Orange Splash",
+        "id": "68467a47-071f-493c-9d4c-58b56da79af2",
+        "image": "./assets/images/food/drinks/orangeSplash.png",
+        "price": 1.25,
+        "category": "Drinks",
+        "description": "Dip into your big win with this decaffeinated soda with an orange taste!",
+        "isDrink": true
+    },
+    {
+        "name": "Fizzy Jr.",
+        "id": "2bd5940b-e4fd-45f7-a28c-a2261af48242",
+        "image": "./assets/images/food/drinks/fizzyJr.png",
+        "price": 1.25,
+        "category": "Drinks",
+        "description": "You are sure to win the league with this caffeinated soda!",
+        "isDrink": true
+    }
+]

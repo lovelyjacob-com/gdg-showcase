@@ -1,0 +1,15 @@
+.github/ - Github folder.
+    workflows/ - Github actions.
+.vscode/ - Visual Studio Code files.
+node_modules/ - Node modules/dependencies.
+src/ - Source code.
+    client/ - Client source code.
+        assets/ - Static assets.
+            fonts/ - Static fonts.
+            images/ - Static images.
+        css/ - Style sheets.
+        data/ - Data files.
+        docs/ - Documentation.
+        includes/ - HTML dynamic includes.
+        javascript/ - Scripts.
+    server/ - Server source code.

@@ -1,0 +1,213 @@
+[
+    {
+        "year": 2024,
+        "month": 3,
+        "day": 10,
+        "times": [
+            {
+                "timeStart": "2pm",
+                "timeEnd": "5pm"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 3,
+        "day": 15,
+        "times": [
+            {
+                "timeStart": "9am",
+                "timeEnd": "11am"
+            },
+            {
+                "timeStart": "3pm",
+                "timeEnd": "4pm"
+            },
+            {
+                "timeStart": "6pm",
+                "timeEnd": "8pm"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 3,
+        "day": 25,
+        "times": [
+            {
+                "timeStart": "10am",
+                "timeEnd": "12pm"
+            },
+            {
+                "timeStart": "1pm",
+                "timeEnd": "3pm"
+            },
+            {
+                "timeStart": "5pm",
+                "timeEnd": "7pm"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 4,
+        "day": 5,
+        "times": [
+            {
+                "timeStart": "9am",
+                "timeEnd": "10am"
+            },
+            {
+                "timeStart": "2pm",
+                "timeEnd": "4pm"
+            },
+            {
+                "timeStart": "6pm",
+                "timeEnd": "7pm"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 4,
+        "day": 15,
+        "times": [
+            {
+                "timeStart": "8am",
+                "timeEnd": "10am"
+            },
+            {
+                "timeStart": "12pm",
+                "timeEnd": "2pm"
+            },
+            {
+                "timeStart": "4pm",
+                "timeEnd": "6pm"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 4,
+        "day": 25,
+        "times": [
+            {
+                "timeStart": "10am",
+                "timeEnd": "11am"
+            },
+            {
+                "timeStart": "1pm",
+                "timeEnd": "3pm"
+            },
+            {
+                "timeStart": "5pm",
+                "timeEnd": "7pm"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 5,
+        "day": 8,
+        "times": [
+            {
+                "timeStart": "9am",
+                "timeEnd": "11am"
+            },
+            {
+                "timeStart": "3pm",
+                "timeEnd": "4pm"
+            },
+            {
+                "timeStart": "6pm",
+                "timeEnd": "8pm"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 5,
+        "day": 18,
+        "times": [
+            {
+                "timeStart": "10am",
+                "timeEnd": "12pm"
+            },
+            {
+                "timeStart": "2pm",
+                "timeEnd": "4pm"
+            },
+            {
+                "timeStart": "7pm",
+                "timeEnd": "8pm"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 5,
+        "day": 28,
+        "times": [
+            {
+                "timeStart": "9am",
+                "timeEnd": "10am"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 6,
+        "day": 12,
+        "times": [
+            {
+                "timeStart": "8am",
+                "timeEnd": "10am"
+            },
+            {
+                "timeStart": "12pm",
+                "timeEnd": "2pm"
+            },
+            {
+                "timeStart": "4pm",
+                "timeEnd": "6pm"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 6,
+        "day": 22,
+        "times": [
+            {
+                "timeStart": "7pm",
+                "timeEnd": "8pm"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 7,
+        "day": 5,
+        "times": [
+            {
+                "timeStart": "9am",
+                "timeEnd": "11am"
+            },
+            {
+                "timeStart": "6pm",
+                "timeEnd": "7pm"
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "month": 7,
+        "day": 15,
+        "times": [
+            {
+                "timeStart": "1pm",
+                "timeEnd": "3pm"
+            }
+        ]
+    }
+]

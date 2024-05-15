@@ -1,0 +1,255 @@
+/* includes/menuBar.html */
+
+#menuBarContainer {
+    display: block;
+    width: 100%;
+    background-color: var(--secondaryBackground);
+    color: var(--accent);
+    font-family: var(--header-font);
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-sizing: border-box;
+    max-height: 50px;
+}
+
+#menuBar,
+#menuBarMobile {
+    display: block;
+    height: 50px;
+    background-color: var(--tertiaryBackground);
+    color: var(--accent);
+    font-family: var(--header-font);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 850px;
+    margin-left: auto;
+    z-index: 3;
+    position: relative;
+}
+
+#leftLinks,
+#rightLinks {
+    display: inline-block;
+    text-align: center;
+    max-width: 280px;
+    width: 280px;
+}
+
+#leftLinks {
+    margin-right: 10px;
+    text-align: right;
+}
+
+#rightLinks {
+    margin-left: 10px;
+    text-align: left;
+}
+
+#menuBarLine {
+    width: 100%;
+    position: absolute;
+    background-color: var(--tertiaryBackground);
+    height: 30px;
+    margin-top: 10px;
+    left: 0px;
+    z-index: 2;
+}
+
+#menuBar a,
+#menuBarMobile a {
+    font: var(--header-font);
+    display: inline-block;
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+    margin-top: 13px;
+    margin-left: 10px;
+    transition-duration: 0.2s;
+    transition-property: color, border-width;
+}
+
+#menuBar a svg,
+#menuBarMobile a svg {
+    display: inline;
+    height: 29px;
+    width: 29px;
+    transition-duration: 0.2s;
+    transition-property: color;
+}
+
+#menuBar .menuBarNormal:hover,
+#menuBar .menuBarNormalCurrent,
+#menuBarMobile .menuBarNormal:hover,
+#menuBarMobile .menuBarNormalCurrent,
+#mobileLinksSideBar .menuBarNormal:hover,
+#mobileLinksSideBar .menuBarNormalCurrent {
+    color: var(--secondaryAccent);
+    border-bottom-width: 7px;
+    padding-bottom: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--secondaryAccent);
+}
+
+#menuBar .menuBarIcon,
+#menuBarMobile .menuBarIcon {
+    float: right;
+}
+
+#menuBar .menuBarIcon:hover,
+#menuBarMobile .menuBarIcon:hover {
+    color: var(--secondaryAccent);
+}
+
+#menuBar .menuBarIconMain img {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin-bottom: -10px;
+    vertical-align: text-top;
+    text-align: left;
+    z-index: 3;
+    position: relative;
+}
+
+#menuBar .menuBarIconMainIcon,
+#menuBarMobile .menuBarIconMainIcon {
+    margin-top: -8px;
+}
+
+#menuBarMobile {
+    display: none;
+}
+
+#mobileLinksSideBarBackground,
+#mobileLinksSideBar {
+    display: none;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 700px) {
+    #menuBar {
+        display: none;
+    }
+
+    #menuBarMobile {
+        display: block;
+    }
+}
+
+@media screen and (width < 940px) {
+    #menuBar {
+        max-width: 100%;
+        border-radius: 0px;
+    }
+}
+
+#menuBarMobile {
+    width: 95%;
+}
+
+#menuMobileButton {
+    font-size: large;
+    width: 80px;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: var(--accent);
+    color: var(--background);
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+}
+
+#menuMobileButton:hover {
+    background-color: var(--secondaryAccent);
+    cursor: pointer;
+}
+
+#menuBarMobile .menuBarIconMain img {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    margin-bottom: -10px;
+    vertical-align: text-top;
+    text-align: left;
+    z-index: 3;
+    position: relative;
+    margin-left: -90px;
+}
+
+#mobileLinksSideBarBackground {
+    width: 0%;
+    height: 200%;
+    background-color: var(--tertiaryBackgroundTransparent);
+    z-index: 500;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.5s;
+}
+
+#mobileLinksSideBar {
+    height: 200%;
+    background-color: var(--background);
+    z-index: 501;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 0%;
+    transition: all 0.5s;
+}
+
+#mobileCloseButton {
+    width: 95%;
+    height: 40px;
+    font-size: larger;
+    border: none;
+    background-color: var(--accent);
+    color: var(--background);
+    transition: all 0.5s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 2%;
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+#mobileCloseButton:hover {
+    background-color: var(--secondaryAccent);
+    cursor: pointer;
+}
+
+#mobileLinksSideBar .menuBarNormal {
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    width: 100%;
+    background-color: var(--backgroundPop);
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: large;
+    border-bottom: 3px solid var(--backgroundPop3);
+}
+
+#mobileLinksSideBar .menuBarNormal:hover {
+    padding: 10px;
+    border-bottom: 2px solid var(--backgroundPop3);
+}
+
+#mobileLinksSideBar .menuBarNormalCurrent {
+    border: none;
+    background-color: var(--secondaryAccent);
+    color: var(--background);
+    border-bottom: 2px solid var(--backgroundPop3);
+}
+
+#mobileAboutUs {
+    border-top: 2px solid var(--backgroundPop3);
+}

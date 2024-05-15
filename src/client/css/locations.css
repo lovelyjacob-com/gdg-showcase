@@ -1,0 +1,49 @@
+#mapImage {
+    display: block;
+    height: 90%;
+    max-height: 300px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#getDirections {
+    width: 90%;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: var(--secondaryAccent);
+    margin-top: 25px;
+    font-size: x-large;
+    padding: 13px;
+    color: var(--background);
+    border-radius: 10px;
+    transition: all 1s;
+    margin-bottom: 25px;
+}
+
+#getDirections svg {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    float: left;
+    margin-right: -50px;
+}
+
+#getDirections:hover {
+    background-color: var(--accent);
+    transition: all 1s;
+}
+
+@media screen and (width < 500px) {
+    #getDirections {
+        margin: 0px;
+        margin-top: 25px;
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0px;
+    }
+}

@@ -1,0 +1,45 @@
+footer {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: var(--secondaryBackground);
+    padding: 25px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#footerLogoImage {
+    height: 100px;
+    width: auto;
+    display: inline;
+    margin-left: 20px;
+}
+
+#footerLogo {
+    display: inline;
+    float: right;
+}
+
+#footerLinksDiv {
+    display: inline;
+}
+
+.footerLink {
+    margin-left: 15px;
+    font-size: larger;
+    margin-top: 10px;
+    white-space: nowrap;
+    display: inline-block;
+    border-bottom: solid var(--accent) 3px;
+    padding-bottom: 3px;
+}
+
+.footerLink:hover {
+    border-bottom: solid var(--secondaryAccent) 3px;
+}
+
+#copyrightText {
+    color: var(--background);
+    margin-top: 30px;
+    padding-left: 20px;
+}

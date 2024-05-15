@@ -1,0 +1,15 @@
+background: rgb(238, 238, 238);
+backgroundPop: rgb(210, 210, 210);
+backgroundPop2: rgb(216, 215, 215);
+secondaryBackground: rgb(34, 40, 49);
+tertiaryAccent: rgb(57, 62, 79);
+accent: rgb(214, 90, 49);
+accentDarken: rgb(179, 71, 35);
+secondaryAccent: rgb(217, 43, 57);
+secondaryAccentDarken: rgb(196, 39, 52);
+text: rgb(0, 0, 0);
+textTransparent: rgba(0, 0, 0, 0.2);
+moneyAccent: rgb(77, 173, 74);
+backgroundCover: rgba(0, 0, 0, 0.8);
+
+All colors can also be found in src/client/css/all.css

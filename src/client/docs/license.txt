@@ -1,0 +1,9 @@
+-> src/client/assets/fonts/Heebo
+    -> Open Source; License: assets/fonts/Heebo/OFL.txt
+
+-> src/client/assets/images/icons/
+    -> Open Source; License: https://www.apache.org/licenses/LICENSE-2.0.txt
+
+-> EVERYTHING ELSE THAT IS NOT LISTED HERE:
+    -> Created by us, open source.
+    -> https://github.com/lovelyjacob-com/gdg-showcase
